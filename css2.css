@@ -1,0 +1,157 @@
+body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    text-align: center;
+    background-color: #FFF8F0;
+
+}
+
+p {
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+header {
+    color: white;
+    letter-spacing: 3px;
+    background-color:#DF2935;  
+    padding: 20px;
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.3);
+}
+
+h2 {
+    color: white;
+    width:100%;
+    font-size: 2em;
+}
+
+section {
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 6px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    border: 0.5px solid white;
+    background-color: #DF2935;
+    margin: 25px;
+    padding: 25px;
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.3);
+}
+
+.icons {
+    font-size: 8em;
+    padding: 25px;
+}
+
+button, .button {
+    background: lightcoral;
+    border: 0;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    margin-bottom: 10px;
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.1);
+}
+
+.blue {
+    background: #DF2935;
+    color: white;
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.3);
+}
+
+.blue2 {
+    background: #DF2935;
+    color: white;
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.3);
+}
+
+.blue3 {
+    background: #DF2935;
+    color: white;
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.3);
+}
+
+
+td {
+    padding: 10px;
+}
+
+table {
+    margin: auto;
+}
+
+option {
+    color: white;
+}
+
+td {
+    color:white;
+}
+
+h3 {
+    color: white;
+}
+
+p1 {
+    color: white;
+}
+
+#my-order {
+background-color: #DF2935;
+padding: 25px;
+display: none;
+}
+
+br {
+    color: black;
+}
+
+footer {
+    padding: 30px;
+    background: grey;
+}
+
+copy {
+    color:white
+}
+
+.demo1{
+    color: white;
+}
+
+p3 {
+    color: white
+}
+
+
+.circle {
+color: white;
+font-size: 2.5em;
+font-family: "Comic Sans MS", "Comic Sans", cursive;
+display: inline-block;
+height: 40px;
+width: 40px;
+margin: 1px;
+border-radius: 50%;
+background: #DF2935;
+padding: 5px 10px 15px 10px;
+}
+
+demo1{
+    color: black;
+}
+
+h2 {
+    color: white;
+}
