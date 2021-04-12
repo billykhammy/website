@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<head><link rel ="stylesheet" href = "css2.css"></head>
+
+<body>
+
+    <header>
+    <h1>Billy's Company</h1>
+    <p>Burger Pizzas and Hotdogs</p>
+    </header>
+
+    <br>
+    <br>
+
+<section class="blue container">
+<h1>Welcome to my Website &#128578;</h1>
+</section>
+   
+<section class="blue container">
+    <h1>Products &#128178;: </h1>
+</section>
+
+<section class="container">
+    
+    <div id="header-plugin"></div>
+    <article class="card"> 
+    <div class="icons"> &#127828;    </div>
+    <h3>Burger</h3>
+    <p1>$3 each</p1>
+    <br>
+    <br>
+    <button onclick="myFunction()">Purchase</button>
+    <br>  
+    <p3 id="demo"></p3>
+    <br>
+    <br>
+    <br>
+    </article>
+    
+    <article class="card"> 
+    <div class="icons"> &#127829; </div>
+    <h3>Pizza</h3>
+    <p1>$3 each</p1>
+    <br>
+    <br>
+    <button onclick="myFunction2()">Purchase</button>
+    <br>  
+    <p3 id="demo2"></p3>
+    <br>
+    <br>
+    <br>
+    </article>
+    
+    <article class="card"> 
+    <div class="icons"> &#127789;    </div>
+    <h3>Hotdog</h3>
+    <p1>$3 each</p1>
+    <br>
+    <br>
+    <button onclick="myFunction3()">Purchase</button> 
+    <br>   
+    <p3 id="demo3"></p3>
+    <br>
+    <br>
+    <br>
+    </article>
+
+    <article class="card"> 
+        <div class="icons"> &#129380;  </div>
+        <h3>Drink</h3>
+        <p1>$2 each</p1>
+        <br>
+        <br>
+        <button onclick="myFunction4()">Purchase</button> 
+        <br>   
+        <p3 id="demo4"></p3>
+        <br>
+        <br>
+        <br>
+        </article>
+
+</section>
+    
+    <form id="my-form">
+    <section class="blue container">
+    <h2>Order Here &#11015;:</h2>
+    <table>
+        <tr>
+        <td>Your Name: </td>
+<td><input type="text" size="25" name="my-name"></td>
+        </tr>
+        
+        <tr>
+        <td>Your Address: </td>
+<td><input type="text" size="25" name="my-address"></td>
+        </tr>
+        
+        <tr>
+        <td>Meal: </td>
+<td> <select name="my-drink">
+<option> Burger </option>
+<option> Pizza </option>
+<option> Hotdog </option>
+</select>
+    </td>
+        </tr>
+        
+        <tr>
+<td>Drink:</td>
+<td> <select name="drinks" >
+<option>Coke</option>
+<option>Water</option>
+<option>Pepsi</option>
+</select>
+</td>
+</tr>
+
+        <tr>
+        <td>Amount: </td>
+            <td>
+<input type="number" name="my-qty"
+value="1" min="1" max="100">    
+            </td>       
+        </tr>
+        <tr>
+        <br>
+        </tr>
+        <tr>
+        <br>
+        </tr>
+        <tr>
+        <td colspan="2" > 
+            <input class="button" type=button value="Order" 
+                onclick="placeOrder();" >
+            
+            <input class="button" type="reset" value="Clear"
+onclick="document.getElementById('my-order').style.display = 'none'"; >
+
+            </td>
+        </tr>
+        
+        
+        </table>
+    </section>
+        <div id="my-order"> </div>
+        </form>
+    
+    
+<div class="circle">B</div>
+<div class="circle">K</div>
+    <br>
+    <br>
+    &copy; Billy Khammy
+    <br>
+    <br>
+</div>
+    
+    <script>
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Please fill out the form!";
+}
+
+function myFunction2() {
+  document.getElementById("demo2").innerHTML = "Please fill out the form!";
+}
+
+function myFunction3() {
+  document.getElementById("demo3").innerHTML = "Please fill out the form!";
+}
+
+function myFunction4
+() {
+  document.getElementById("demo4").innerHTML = "Please fill out the form!";
+}
+
+function placeOrder (){
+    var orderForm = document.getElementById("my-form");
+    results = "<h1>Order Successful!</h1> <p>Here is your order:</p>";
+    results += "<br><p>Name: </p> " + orderForm.elements["my-name"].value;
+    results += "<br><p>Address: </p> " + orderForm.elements["my-address"].value;
+    results += "<br><p>Meal: </p> " + orderForm.elements["my-drink"].value;
+    results += "<br><p>Drink: </p> " + orderForm.elements["drinks"].value;
+    results += "<br><p>Amount: </p> " + orderForm.elements["my-qty"].value;
+    var orderResults = document.getElementById("my-order");
+    orderResults.style.display = "block";
+    orderResults.innerHTML = results;
+}
+
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p5").hide();
+  });
+  $("#show").click(function(){
+    $("p5").show();
+  });
+});
+    </script>
+
+</body>
